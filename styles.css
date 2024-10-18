@@ -1,0 +1,229 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #961a1a;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.5s; /* add transition effect to navbar background color */
+}
+
+.navbar .center {
+    flex-grow: 1; /* Allow the center item to take available space */
+    text-align: center; /* Center the text */
+}
+
+.navbar .right {
+    display: flex; /* Use flexbox for right section */
+    align-items: center; /* Align items vertically centered */
+}
+
+.navbar .right .profile,
+.navbar .right .contact {
+    margin-left: 10px; /* Add space between profile and contact */
+}
+
+.navbar:hover {
+    background-color: #444; /* change background color on hover */
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: auto;
+    transition: font-size 0.5s; /* add transition effect to logo font size */
+}
+
+.logo:hover {
+    font-size: 28px; /* increase font size on hover */
+}
+
+.profile {
+    margin-right: 10px;
+    transition: margin-right 0.5s; /* add transition effect to profile margin */
+}
+
+.profile:hover {
+    margin-right: 20px; /* increase margin on hover */
+}
+
+.hero {
+    background-color: #e0f7fa;
+    padding: 20px;
+    text-align: center;
+    animation: hero-fade-in 2s; /* add animation to hero section */
+}
+
+@keyframes hero-fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.trainer-banner {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+
+.trainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    margin-top: 50px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.trainer:hover {
+    background-color: #f7f7f7; /* Change background color on hover */
+    transform: scale(1.05); /* Scale up the trainer profile on hover */
+    color: #ddd;
+}
+
+.trainer .photo {
+    flex-basis: 20%;
+    margin-right: 20px;
+}
+
+.trainer .info {
+    flex-basis: 40%;
+    text-align: center;
+}
+
+.trainer .actions {
+    flex-basis: 30%;
+    text-align: right;
+}
+
+.trainer img {
+    width: 70%;
+    height: 120%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.trainer:hover {
+    background-color: #5b686a; /* change background color on hover */
+}
+
+.photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    animation: photo-fade-in 2s; /* add animation to photo */
+}
+
+@keyframes photo-fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.info {
+    text-align: center;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+
+.fitness-shop {
+    background-color: #f7f7f7;
+    padding: 20px;
+    text-align: center;
+    animation: shop-slide-in 2s; /* add animation to fitness shop section */
+}
+
+@keyframes shop-slide-in {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    animation: footer-fade-in 2s; /* add animation to footer */
+}
+
+@keyframes footer-fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.profile-info {
+    padding: 20px;
+}
+
+.previous-meetings {
+    padding: 20px;
+}
+
+.logo{
+    height: 80px;
+}
+
+.train{
+    height: 100px;
+}
+
+.profile{
+    height: 80px;
+    border-radius: 50%;
+}
+.title{
+    font-size: 2.5em;
+    color: rgb(255, 255, 255);
+    flex-grow: 1; /* Allow the title to take up remaining space */
+    text-align: center;
+}
+.contact{
+    display: flexbox;
+    
+}
+.contact a:hover, .profile a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+.contact a, .profile a {
+    color: whitesmoke; /* Text color for links */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.trainer-list {
+    overflow: hidden; /* or scroll, auto */
+}
+
+.tlk{
+    margin-right: 30px;
+}
